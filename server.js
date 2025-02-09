@@ -11,6 +11,7 @@ app.use(
   cors({
     origin: ["http://localhost:5174", "https://chnhxl-5173.csb.app"], // Allow multiple origins
     credentials: true, // Allow sending cookies
+    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
   })
 );
 
