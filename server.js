@@ -6,12 +6,14 @@ app.use(express.json())
 //cors
 const cors = require("cors");
 
+
 app.use(
   cors({
-    origin: "http://localhost:5174", // Your React app's URL
+    origin: ["http://localhost:5174", "https://chnhxl-5173.csb.app"], // Allow multiple origins
     credentials: true, // Allow sending cookies
   })
 );
+
 
 //importing the Router
 const useRouter = require('./user')
